@@ -1,0 +1,105 @@
+\begindocument{ctax}
+\part{函数\,极限\,连续}
+\section{函数}
+\subsection{求分段函数的复合函数}
+\paragraph{求解思路}
+求$f(g(x))$时,由外层函数$f$,写出复合函数的表达式,并同时写出中间变量(即$g(x)$)的取值范围,然后按内层函数$g(x)$的分段表达式,过渡到自变量$x$的变换范围
+\subsection{关于函数有界(无界)的讨论}
+\paragraph{求解思路}
+\begin{enumerate}
+    \item  
+            函数的有界性: \\ 设函数$f(x)$在数集$X$上有定义,如果存在常数$M$,当$x \in X$时,$f(x) \leq M$, 则称$f(x)$在$X$上有\textbf{上界};如果存在常数$M$,当$x \in X$时,$f(x) \geq M$, 则称$f(x)$在$X$上有\textbf{下界}
+    \item
+        有界和无界的若干\textbf{充分条件} \\
+        \begin{enumerate}
+            \item[(1)] 设$\lim\limits_{x\rightarrow x_0^-}f(x)$存在,则$ \exists\delta> 0$,当\mbox{$\delta < x - x_0 < 0$}时,$f(x)$有界;对\mbox{$x\rightarrow x_0^+$},\mbox{$x\rightarrow x_0$}结论类似
+            \item[(2)] 设$\lim\limits_{x\rightarrow\infty}f(x)$存在,则$ \exists X> 0$,当$|x| > X$时,$f(x)$有界;对$x\rightarrow +\infty$,\mbox{$x\rightarrow -\infty$}结论类似
+            \item[(3)] 设$f(x)$在\textbf{$[a,b]$}上连续,则$f(x)$在$[a,b]$上有界
+            \item[(4)] $f(x)$有最大(小)值,则$f(x)$有上(下)界
+            \item[(5)] 有界函数与有界函数之和,积均为有界函数
+            \item[(6)] 设$\lim\limits_{x\rightarrow\square}f(x) = \infty$,则$f(x)$在 $\square$ 的去心邻域内无界
+        \end{enumerate}
+\end{enumerate}
+\newpage
+\section{极限}
+\subsection{求函数的极限}
+    \paragraph{问题形式}
+        七种待定型: $\frac{0}{0}$\ $ \frac{\infty}{\infty}$\ $ 0\cdot\infty  $\ $\infty - \infty$\ $  1^\infty $\ $ 0^0$\ $ \infty^0 $
+    \paragraph{求解思路}
+        \begin{enumerate}
+            \item 使用初等数学(三角,对数,指数,分子与分母同乘以某式,提公因式等)中的恒等变形,使得能约分的就约分,能化简的就化简
+            \item 如果有因式的极限存在但不为0,则将该因式按乘积运算法则提出来另求,剩下的在另行处理
+            \item 等价无穷小替换
+            \item 洛必达法则
+            \item 佩亚诺余项泰勒公式
+            \item 夹逼定理
+            \item 利用导数定义
+            \item 最后归结到极限的四则运算定理,复合函数求极限,连续函数求极限,以及几个重要极限
+        \end{enumerate} 
+    
+\subsection{已知某一极限,求另一相关的极限或其中的参数}
+    \paragraph{已知极限求参数}
+    \subparagraph{求解思路}      
+    \begin{enumerate}
+        \item 如果$\lim\frac{\square}{\square}$存在,则其上下极限值均为0
+        \item 泰勒公式
+        \item 洛必达法则
+    \end{enumerate}
+    \paragraph{已知极限求另一极限}
+    \subparagraph{求解思路}
+    
+    \begin{enumerate}
+        \item 利用极限与无穷小的关系,得到$f(x)$然后带入
+        \item 将原极限凑成带求极限
+    \end{enumerate}
+\subsection{含有$|x|$,\ $ e^{\frac{1}{x}}$\ 的$x \rightarrow 0$ 时的极限, 含有取整函数 $[x]$的$x$趋于整数时的极限}
+    \paragraph{特点}
+    当$|x|$,\ $ e^{\frac{1}{x}}$\ 的$x \rightarrow 0$ 时,需要对$0^+$ \ $0^-$进行讨论,因为当$x\rightarrow0$时的极限不存在
+    \paragraph{求解思路}
+    \begin{enumerate}
+        \item  假设极限存在,求该点左右两侧的极限
+    \end{enumerate}
+\subsection{无穷小的比较}
+    \paragraph{知识点}
+    \begin{enumerate}
+        \item $\lim\limits_{x\rightarrow \square}\frac{\alpha(x)}{\beta(x)} = 0 \Longrightarrow $ $\alpha(x)$ 是 $\beta(x)$的高阶无穷小 
+        \item $\lim\limits_{x\rightarrow \square}\frac{\alpha(x)}{\beta(x)} = C \neq 0 \Longrightarrow $ $\alpha(x)$ 是 $\beta(x)$的同阶无穷小
+        \item $\lim\limits_{x\rightarrow \square}\frac{\alpha(x)}{\beta(x)} = 1 \Longrightarrow $ $\alpha(x)$ 是 $\beta(x)$的等价无穷小 
+        \item $\lim\limits_{x\rightarrow \square}\frac{\alpha(x)}{\beta^k(x)} = C \neq 0 \Longrightarrow $ $\alpha(x)$ 是 $\beta(x)$的k阶无穷小  
+    \end{enumerate}
+    \paragraph{思路}
+    \begin{enumerate}
+        \item 洛必达法则
+        \item 佩亚诺余项泰勒公式转开
+        \item 等价无穷小 \textbf{条件是$\square \rightarrow 0$}
+    \end{enumerate}
+\subsection{数列的极限}
+    \subsubsection{n项和或n个因式的积的数列的极限}
+        \paragraph{思路}
+            \begin{enumerate}
+                \item 将极限凑成积分的定义$f(x) = \sum\limits_{i=1}^{\infty}\frac{b-a}{n}f(a + \frac{b-a}{n}i)$的形式
+                \item 利用夹逼准则
+            \end{enumerate}
+    \subsubsection{以递推形式给出的数列的极限}
+        \paragraph{思路}
+            \begin{enumerate}
+                \item 先假设极限存在, 求出此极限(方便下步对极限的存在性的证明)
+                \item 利用单调有界必有极限证明极限存在
+                \item 利用夹逼定理
+            \end{enumerate}
+    \subsubsection{求以极限定义的函数的表达式}
+        \paragraph{思路}
+            对于此类题目,一般会出现不同项对极限的作用情况不同,讨论自变量$x$的范围来决定极限的取值
+\subsection{极限运算定理的正确运用}
+    \paragraph{知识点}
+        \subparagraph{四则运算法则}
+            设$\lim\limits_{x\rightarrow \square}u(x) \exists = A$, $\lim\limits_{x\rightarrow \square}v(x) \exists = B$
+            \begin{enumerate}
+                \item $\lim\limits_{x\rightarrow \square}(u(x)\pm v(x)) = \lim\limits_{x\rightarrow \square}u(x) + \lim\limits_{x\rightarrow \square}v(x) = A \pm B$
+                \item $\lim\limits_{x\rightarrow \square}(u(x)v(x)) = \lim\limits_{x\rightarrow \square}u(x)\lim\limits_{x\rightarrow \square}v(x) = AB$
+                \item $\lim\limits_{x\rightarrow \square}(cu(x)\pm v(x)) = c\lim\limits_{x\rightarrow \square}u(x) = cA$
+                \item $\lim\limits_{x\rightarrow \square}\frac{u(x)}{v(x)} =
+                \frac{\lim\limits_{x\rightarrow \square}u(x)}{\lim\limits_{x\rightarrow \square}v(x)} = \frac{A}{B}$ $($设$B\ne 0)$
+                \item  $\lim\limits_{x\rightarrow \square}u(x) = 0$,并设在$\square$的去心邻域内$k(x)$有界,则 $\lim\limits_{x\rightarrow \square}k(x)u(x) = 0$
+            \end{enumerate}
+\section{函数的连续与间断}

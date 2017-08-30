@@ -1,0 +1,100 @@
+<h1 id="函数">函数</h1>
+<h2 id="求分段函数的复合函数">求分段函数的复合函数</h2>
+<h4 id="求解思路">求解思路</h4>
+<p>求<span class="math inline"><em>f</em>(<em>g</em>(<em>x</em>))</span>时,由外层函数<span class="math inline"><em>f</em></span>,写出复合函数的表达式,并同时写出中间变量(即<span class="math inline"><em>g</em>(<em>x</em>)</span>)的取值范围,然后按内层函数<span class="math inline"><em>g</em>(<em>x</em>)</span>的分段表达式,过渡到自变量<span class="math inline"><em>x</em></span>的变换范围</p>
+<h2 id="关于函数有界无界的讨论">关于函数有界(无界)的讨论</h2>
+<h4 id="求解思路-1">求解思路</h4>
+<ol>
+<li><p>函数的有界性:<br />
+设函数<span class="math inline"><em>f</em>(<em>x</em>)</span>在数集<span class="math inline"><em>X</em></span>上有定义,如果存在常数<span class="math inline"><em>M</em></span>,当<span class="math inline"><em>x</em> ∈ <em>X</em></span>时,<span class="math inline"><em>f</em>(<em>x</em>)≤<em>M</em></span>, 则称<span class="math inline"><em>f</em>(<em>x</em>)</span>在<span class="math inline"><em>X</em></span>上有<strong>上界</strong>;如果存在常数<span class="math inline"><em>M</em></span>,当<span class="math inline"><em>x</em> ∈ <em>X</em></span>时,<span class="math inline"><em>f</em>(<em>x</em>)≥<em>M</em></span>, 则称<span class="math inline"><em>f</em>(<em>x</em>)</span>在<span class="math inline"><em>X</em></span>上有<strong>下界</strong></p></li>
+<li><p>有界和无界的若干<strong>充分条件</strong><br />
+</p>
+<ol>
+<li><p>设<span class="math inline">$\lim\limits_{x\rightarrow x_0^-}f(x)$</span>存在,则<span class="math inline">∃<em>δ</em> &gt; 0</span>,当时,<span class="math inline"><em>f</em>(<em>x</em>)</span>有界;对,结论类似</p></li>
+<li><p>设<span class="math inline">$\lim\limits_{x\rightarrow\infty}f(x)$</span>存在,则<span class="math inline">∃<em>X</em> &gt; 0</span>,当<span class="math inline">|<em>x</em>|&gt;<em>X</em></span>时,<span class="math inline"><em>f</em>(<em>x</em>)</span>有界;对<span class="math inline"><em>x</em> → +∞</span>,结论类似</p></li>
+<li><p>设<span class="math inline"><em>f</em>(<em>x</em>)</span>在<strong><span class="math inline">[<em>a</em>, <em>b</em>]</span></strong>上连续,则<span class="math inline"><em>f</em>(<em>x</em>)</span>在<span class="math inline">[<em>a</em>, <em>b</em>]</span>上有界</p></li>
+<li><p><span class="math inline"><em>f</em>(<em>x</em>)</span>有最大(小)值,则<span class="math inline"><em>f</em>(<em>x</em>)</span>有上(下)界</p></li>
+<li><p>有界函数与有界函数之和,积均为有界函数</p></li>
+<li><p>设<span class="math inline">$\lim\limits_{x\rightarrow\square}f(x) = \infty$</span>,则<span class="math inline"><em>f</em>(<em>x</em>)</span>在 <span class="math inline">▫</span> 的去心邻域内无界</p></li>
+</ol></li>
+</ol>
+<h1 id="极限">极限</h1>
+<h2 id="求函数的极限">求函数的极限</h2>
+<h4 id="问题形式">问题形式</h4>
+<p>七种待定型: <span class="math inline">$\frac{0}{0}$</span> <span class="math inline">$ \frac{\infty}{\infty}$</span> <span class="math inline">0 ⋅ ∞</span> <span class="math inline">∞ − ∞</span> <span class="math inline">1<sup>∞</sup></span> <span class="math inline">0<sup>0</sup></span> <span class="math inline">∞<sup>0</sup></span></p>
+<h4 id="求解思路-2">求解思路</h4>
+<ol>
+<li><p>使用初等数学(三角,对数,指数,分子与分母同乘以某式,提公因式等)中的恒等变形,使得能约分的就约分,能化简的就化简</p></li>
+<li><p>如果有因式的极限存在但不为0,则将该因式按乘积运算法则提出来另求,剩下的在另行处理</p></li>
+<li><p>等价无穷小替换</p></li>
+<li><p>洛必达法则</p></li>
+<li><p>佩亚诺余项泰勒公式</p></li>
+<li><p>夹逼定理</p></li>
+<li><p>利用导数定义</p></li>
+<li><p>最后归结到极限的四则运算定理,复合函数求极限,连续函数求极限,以及几个重要极限</p></li>
+</ol>
+<h2 id="已知某一极限求另一相关的极限或其中的参数">已知某一极限,求另一相关的极限或其中的参数</h2>
+<h4 id="已知极限求参数">已知极限求参数</h4>
+<h5 id="求解思路-3">求解思路</h5>
+<ol>
+<li><p>如果<span class="math inline">$\lim\frac{\square}{\square}$</span>存在,则其上下极限值均为0</p></li>
+<li><p>泰勒公式</p></li>
+<li><p>洛必达法则</p></li>
+</ol>
+<h4 id="已知极限求另一极限">已知极限求另一极限</h4>
+<h5 id="求解思路-4">求解思路</h5>
+<ol>
+<li><p>利用极限与无穷小的关系,得到<span class="math inline"><em>f</em>(<em>x</em>)</span>然后带入</p></li>
+<li><p>将原极限凑成带求极限</p></li>
+</ol>
+<h2 id="含有x-efrac1x的x-rightarrow-0-时的极限-含有取整函数-x的x趋于整数时的极限">含有<span class="math inline">|<em>x</em>|</span>, <span class="math inline">$ e^{\frac{1}{x}}$</span> 的<span class="math inline"><em>x</em> → 0</span> 时的极限, 含有取整函数 <span class="math inline">[<em>x</em>]</span>的<span class="math inline"><em>x</em></span>趋于整数时的极限</h2>
+<h4 id="特点">特点</h4>
+<p>当<span class="math inline">|<em>x</em>|</span>, <span class="math inline">$ e^{\frac{1}{x}}$</span> 的<span class="math inline"><em>x</em> → 0</span> 时,需要对<span class="math inline">0<sup>+</sup></span>  <span class="math inline">0<sup>−</sup></span>进行讨论,因为当<span class="math inline"><em>x</em> → 0</span>时的极限不存在</p>
+<h4 id="求解思路-5">求解思路</h4>
+<ol>
+<li><p>假设极限存在,求该点左右两侧的极限</p></li>
+</ol>
+<h2 id="无穷小的比较">无穷小的比较</h2>
+<h4 id="知识点">知识点</h4>
+<ol>
+<li><p><span class="math inline">$\lim\limits_{x\rightarrow \square}\frac{\alpha(x)}{\beta(x)} = 0 \Longrightarrow $</span> <span class="math inline"><em>α</em>(<em>x</em>)</span> 是 <span class="math inline"><em>β</em>(<em>x</em>)</span>的高阶无穷小</p></li>
+<li><p><span class="math inline">$\lim\limits_{x\rightarrow \square}\frac{\alpha(x)}{\beta(x)} = C \neq 0 \Longrightarrow $</span> <span class="math inline"><em>α</em>(<em>x</em>)</span> 是 <span class="math inline"><em>β</em>(<em>x</em>)</span>的同阶无穷小</p></li>
+<li><p><span class="math inline">$\lim\limits_{x\rightarrow \square}\frac{\alpha(x)}{\beta(x)} = 1 \Longrightarrow $</span> <span class="math inline"><em>α</em>(<em>x</em>)</span> 是 <span class="math inline"><em>β</em>(<em>x</em>)</span>的等价无穷小</p></li>
+<li><p><span class="math inline">$\lim\limits_{x\rightarrow \square}\frac{\alpha(x)}{\beta^k(x)} = C \neq 0 \Longrightarrow $</span> <span class="math inline"><em>α</em>(<em>x</em>)</span> 是 <span class="math inline"><em>β</em>(<em>x</em>)</span>的k阶无穷小</p></li>
+</ol>
+<h4 id="思路">思路</h4>
+<ol>
+<li><p>洛必达法则</p></li>
+<li><p>佩亚诺余项泰勒公式转开</p></li>
+<li><p>等价无穷小 <strong>条件是<span class="math inline">▫ → 0</span></strong></p></li>
+</ol>
+<h2 id="数列的极限">数列的极限</h2>
+<h3 id="n项和或n个因式的积的数列的极限">n项和或n个因式的积的数列的极限</h3>
+<h4 id="思路-1">思路</h4>
+<ol>
+<li><p>将极限凑成积分的定义<span class="math inline">$f(x) = \sum\limits_{i=1}^{\infty}\frac{b-a}{n}f(a + \frac{b-a}{n}i)$</span>的形式</p></li>
+<li><p>利用夹逼准则</p></li>
+</ol>
+<h3 id="以递推形式给出的数列的极限">以递推形式给出的数列的极限</h3>
+<h4 id="思路-2">思路</h4>
+<ol>
+<li><p>先假设极限存在, 求出此极限(方便下步对极限的存在性的证明)</p></li>
+<li><p>利用单调有界必有极限证明极限存在</p></li>
+<li><p>利用夹逼定理</p></li>
+</ol>
+<h3 id="求以极限定义的函数的表达式">求以极限定义的函数的表达式</h3>
+<h4 id="思路-3">思路</h4>
+<p>对于此类题目,一般会出现不同项对极限的作用情况不同,讨论自变量<span class="math inline"><em>x</em></span>的范围来决定极限的取值</p>
+<h2 id="极限运算定理的正确运用">极限运算定理的正确运用</h2>
+<h4 id="知识点-1">知识点</h4>
+<h5 id="四则运算法则">四则运算法则</h5>
+<p>设<span class="math inline">$\lim\limits_{x\rightarrow \square}u(x) \exists = A$</span>, <span class="math inline">$\lim\limits_{x\rightarrow \square}v(x) \exists = B$</span></p>
+<ol>
+<li><p><span class="math inline">$\lim\limits_{x\rightarrow \square}(u(x)\pm v(x)) = \lim\limits_{x\rightarrow \square}u(x) + \lim\limits_{x\rightarrow \square}v(x) = A \pm B$</span></p></li>
+<li><p><span class="math inline">$\lim\limits_{x\rightarrow \square}(u(x)v(x)) = \lim\limits_{x\rightarrow \square}u(x)\lim\limits_{x\rightarrow \square}v(x) = AB$</span></p></li>
+<li><p><span class="math inline">$\lim\limits_{x\rightarrow \square}(cu(x)\pm v(x)) = c\lim\limits_{x\rightarrow \square}u(x) = cA$</span></p></li>
+<li><p><span class="math inline">$\lim\limits_{x\rightarrow \square}\frac{u(x)}{v(x)} =
+                \frac{\lim\limits_{x\rightarrow \square}u(x)}{\lim\limits_{x\rightarrow \square}v(x)} = \frac{A}{B}$</span> <span class="math inline">(</span>设<span class="math inline"><em>B</em> ≠ 0)</span></p></li>
+<li><p><span class="math inline">$\lim\limits_{x\rightarrow \square}u(x) = 0$</span>,并设在<span class="math inline">▫</span>的去心邻域内<span class="math inline"><em>k</em>(<em>x</em>)</span>有界,则 <span class="math inline">$\lim\limits_{x\rightarrow \square}k(x)u(x) = 0$</span></p></li>
+</ol>
+<h1 id="函数的连续与间断">函数的连续与间断</h1>
